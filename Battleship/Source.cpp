@@ -1,21 +1,23 @@
 #include <iostream>
 #include <string>
+#include "drawField.h"
 
 using namespace std;
 
 
-class statki
+class game
 {
-	string zTraf = "x";
-	string zPudlo = "o";
-	string zPuste = " ";
+	string chHit = "x";
+	string chMiss = "o";
+	string chEmpty = " ";
 
 public:
+
 };
 
-class rysuj :public statki
+class drawShip :public game
 {
-
+	
 };
 
 int main()
@@ -36,12 +38,12 @@ int main()
 		<< "  J |x|o| |o|x|o| |o|x|o|\n\n";
 
 
-	string pole[10][10];
+	string field[10][10];
 	for (int i = 0; i < 10; i++)
 	{
 		for (int j = 0; j < 10; j++)
 		{
-			pole[i][j] = 'x';
+			field [i][j] = 'x';
 		}
 	}
 
@@ -50,14 +52,14 @@ int main()
 	y += 1; // wyrownanie wzgledem planszy
 	for (int i = y; i < (4+y) ; i++)
 	{
-		pole[x][i] = 'O';
+		field[x][i] = 'O';
 	}
 
 	for (int i = 0; i < 10; i++)
 	{
 		for (int j = 0; j < 10; j++)
 		{
-			cout<<pole[i][j];
+			cout<<field[i][j];
 		}
 		cout << "\n";
 	}
