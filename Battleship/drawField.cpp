@@ -2,8 +2,7 @@
 
 
 
-
-drawField::drawField()
+drawField::drawField(std::string ships)
 {
 }
 

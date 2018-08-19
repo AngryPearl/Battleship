@@ -1,11 +1,13 @@
 #pragma once
+#include <string>
+
 
 
 class drawField :
 	public game
 {
 public:
-	drawField();
+	drawField(std::string ships);
 	~drawField();
 };
 
