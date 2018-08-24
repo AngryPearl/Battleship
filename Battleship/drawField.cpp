@@ -1,12 +1,17 @@
-#include "drawField.h"
+/*#include "drawField.h"
 
 
 
-drawField::drawField(std::string ships)
+drawField::drawField(int * ships)
 {
+	cout<< "\n   YOUR FIELD";
+	extern char field = {
+			{'1','2'}
+	};
 }
 
 
 drawField::~drawField()
 {
 }
+*/
